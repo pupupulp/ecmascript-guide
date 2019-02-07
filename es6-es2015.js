@@ -24,6 +24,14 @@ wait()
 
 	})
 
+/** Generators */
+function *generatorFunction(word) {
+	let phrase = (yield) word.repeat(3)
+	return phrase
+}
+const anotherGenerator = generatorFunction('HA')
+anotherGenerator.next('HE')
+
 /** let and const Variables */
 let sampleVariable
 const anotherVariable
